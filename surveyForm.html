@@ -1,0 +1,232 @@
+<html>
+<title>Survey Form</title>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .required::after {
+
+            content: " *";
+            color: red;
+        }
+
+        .lname{
+            margin-left: 140px;
+        }
+
+        .email {
+            width: 343px;
+        }
+        .checked{
+            color:goldenrod;
+        }
+        table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+		
+		th, td {
+			text-align: left;
+			padding: 8px;
+            width:100px
+		}
+		
+		tr:nth-child(even) {
+			background-color: rgb(235, 229, 229);
+            
+		}
+        .comments{
+            width: 1500px;
+            height: 100px;
+        }
+        .btnsubmit{
+            padding:10px;
+            width:100px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="surveyform">
+
+        <form>
+            <label class="required" for="name"><b>Name:</b></label><br>
+            <input type="text" name="Name" required />
+             <input type="text" name="Name" /><br>
+             <label class="fname"for="first">First</label>
+            <span><label class="lname"for="last">Last</labe></span><br><br>
+            <label class="required" for="email"><b>Email:</b></label><br>
+            <input class="email" type="text" name="email" /><br><br>
+            <label class="required" for="experience"><b>Your Experience:</b></label><br><br>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span><br>
+            <p>Overall, how would you rate your experience with us?</p>
+            <div class="grid">
+                <p class="required"><b>How satisfied are you with</b></p>
+                <table>
+                <tr>
+                    <th>       </th>
+                    <td>Very Unsatisfied</td>
+                    <td>Unsatisfied</td>
+                    <td>Neutral</td>
+                    <td>Satisfied</td>
+                    <td>Very Satisfied</td>
+                </tr>
+                
+                <tr>
+                    <td>Purchase</td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1"/>
+                    </td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1"/>
+                    </td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1"/>
+                    </td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1"/>
+                    </td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1"/>
+                    </td>
+                   
+                </tr>
+                
+                <tr>
+                    <td>Service</td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1"/>
+                    </td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1"/>
+                    </td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1"/>
+                    </td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1"/>
+                    </td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1"/>
+                    </td>
+                    
+                </tr>
+                
+                <tr>
+                    <td>Company Overall</td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1"/>
+                    </td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1"/>
+                    </td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1"/>
+                    </td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1"/>
+                    </td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1"/>
+                    </td>
+                  
+                </tr>
+                
+                               
+            </table>      
+
+            </div>
+            <div class="gridTwo">
+                <p class="required"><b>How likely are you to</b></p>
+                <table>
+                <tr>
+                    <th> </th>
+                    <td>Very Unlikely</td>
+                    <td>Unlikely</td>
+                    <td>Neutral</td>
+                    <td>Likely</td>
+                    <td>Very Likely</td>
+                </tr>
+                
+                <tr>
+                    <td>Buy fromus again</td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1"/>
+                    </td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1"/>
+                    </td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1"/>
+                    </td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1"/>
+                    </td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1"/>
+                    </td>
+                   
+                </tr>
+                
+                <tr>
+                    <td>Recommend our<br>
+                        product to others</td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1"/>
+                    </td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1"/>
+                    </td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1"/>
+                    </td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1"/>
+                    </td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1"/>
+                    </td>
+                    
+                </tr>
+                
+                <tr>
+                    <td>Recommend our<br>
+                        company to others
+                    </td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1"/>
+                    </td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1"/>
+                    </td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1"/>
+                    </td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1"/>
+                    </td>
+                    <td>
+                        <input type="radio" name="radios" id="radio1"/>
+                    </td>
+                  
+                </tr>
+                
+                               
+            </table>      
+
+            </div>
+            <div>
+                <p><b>Additional comments or suggestions</b></p>
+                <textarea class="comments" id="comments" name="comments"></textarea><br><br>
+                <button class="btnsubmit">Submit</button>
+            </div>
+
+</body>
+
+</html>
